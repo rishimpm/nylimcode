@@ -1,0 +1,9 @@
+Tickets for DS App. 
+Step1 : CMDB ticket for registering the url - RITM1479114
+Step 2 : security certificate for the above url - RITM1509511
+Step 3 : F5 Load Balancer configuration for the above url -https://qa.ai.newyorklifeinvestments.com/ - RITM1517616
+Step 4 : F5 Load Balancer configuration for the above url -https://qaalb.ai.newyorklifeinvestments.com/- RITM1517619
+Step  5 : External Public IP registration - RITM1527564
+Step 6 : Request for IS exception - RITM1525453
+Step 7 : Firewall Dossier Report - RITM1529160
+

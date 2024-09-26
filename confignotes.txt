@@ -1,0 +1,68 @@
+dev.ai.newyorklifeinvestments.com
+
+APP13838
+
+User - External Flow - F5 in external - F5 internal - AWS LB FELB - Ping
+
+there should be 2 LBs
+Front end lB points to aws pingaccess engine
+Internal LB points to target app IPs
+
+Dev : Only internal
+QA : Internal & External
+Prod : Internal & External
+
+
+
+prod
+http://10.196.176.71:8000/apiportal/
+curl http://10.196.176.71:8000/get_test/
+
+
+ip for load balancer-10.195.176.88
+
+To do: 
+Investments Technology–FTE - Security C4E (sharepoint.com)
+
+jdbc:redshift://nyl-nylimclientdata-dev-redshift.cnrlqw8g5zso.us-east-1.redshift.amazonaws.com:5439/client
+ 
+Gupta, Vivek K. <Vivek_K_Gupta@newyorklife.com>
+
+Enrique-for sso RITMS
+Arun knows about SSO implementation
+Tanvi-SSO architecture
+Gene-Any access issues
+Ayan-JIRA
+Krishtopher - for SSL certificate contact
+Enrique - for Network
+Jayalakshmi - AWS LB config contact
+Rekha-can ask about load balancer
+Amit-Load Balancer
+Andy Jack for SSL
+Paneerselvam-Asked about load balancer config..knows about SSO too
+Michael Buckley for certificate issues*
+
+
+Notes
+
+
+
+Email Subject line->Sheng mentioned will talk to Wei about sending sample data and code
+Multiple Document Summarizer->They are still working on the code in frontend
+SSL->Followed up about CSR error
+SSO->Waiting for load balancer
+Load Balancer->Waiting for SSL
+
+
+
+
+For request-RITM1490761
+Load balancer ip is->10.195.176.84
+The load balancer points to below PingAccess ips:
+10.184.110.49
+10.184.109.223
+10.184.110.227
+
+For request RITM1491819
+Load balancer ip is 10.195.176.85
+The load balancer points to ip->10.195.176.87

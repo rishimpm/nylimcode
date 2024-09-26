@@ -1,0 +1,251 @@
+
+JDBC connection string -
+jdbc:redshift://nyl-nylimclientdata-dev-redshift.cnrlqw8g5zso.us-east-1.redshift.amazonaws.com:5439/client?user=T95UD2Q&password=Anithashankar84#
+
+
+This Backend LB URL (below)  works outside of AWS network but when PING team is trying to connect with it , they are getting issues to resolve the host name. Another issue is NSLOOKUP doesn't work for the below url inside AWS network but works outside fine. 
+  devalb.ai.newyorklifeinvestments.com
+
+NGINX
+scp -i T95UD2QS-dev.pem app.py ubuntu@10.195.176.47:/home/ubuntu/
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.47
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+sudo nano /etc/nginx/sites-available/default
+sudo nano /etc/systemd/system/bedrock.service
+
+sudo systemctl restart nginx
+
+sudo systemctl daemon-reload
+sudo systemctl start bedrock
+sudo systemctl enable bedrock
+
+
+
+# Find the PID of the Gunicorn process
+ps aux | grep gunicorn
+
+# Kill the Gunicorn process using its PID
+kill -HUP <gunicorn_pid>
+
+#Start gunicorn
+gunicorn --workers=2 --timeout=1000 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000 app:app
+
+
+curl -X POST http://10.195.176.47/get_response -d "query=what is nj capital"   
+
+***************************************
+apache
+scp -i T95UD2QS-dev.pem app.py ubuntu@10.195.176.53:/home/ubuntu/
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.53
+****************************************
+frontend
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.47
+
+backend with domino
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.53
+
+backend without domino
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.59
+******************************************
+scp  -i T95UD2QS-dev.pem -r "chatagent_backend\api_util.py" ubuntu@10.195.176.53:/home/ubuntu/
+
+
+for apache(inside the conf file)
+ProxyPass / http://127.0.0.1:8000/
+ProxyPassReverse / http://127.0.0.1:8000/
+sudo apt-get install libapache2-mod-wsgi-py3
+ sudo a2enmod wsgi
+sudo apache2ctl -f /etc/apache2/apache2.conf -k start
+ sudo systemctl reload apache2
+ sudo a2ensite flaskapp.conf
+sudo systemctl restart apache2
+sudo a2enmod proxy
+
+sudo a2enmod proxy_http
+
+sudo systemctl restart apache2
+
+to start server
+backend
+uvicorn main:app --host 127.0.0.1 --port 8000
+
+sudo nano /etc/apache2/sites-available/flaskapp.conf
+frontend
+gunicorn app:server -b:8000
+
+Working apis
+Nginx
+curl -X POST   -F "file=@sample.pdf"    -F "app_mode=Document Summary" -F "enable_chat_history=0"  -F "user_input=None" http://10.195.176.59:8000/apiportal/
+
+Apache( uvicorn api_util:app --host 127.0.0.1 --port 8000)
+curl -X POST   -F "file=@sample.pdf"    -F "app_mode=Document Summary" -F "enable_chat_history=0"  -F "user_input=None" http://10.195.176.53/apiportal/
+
+curl -X POST   -F "file=@sample.pdf"    -F "app_mode=Document Summary" -F "file_id=None" -F "original_filename=None" -F  "enable_chat_history=0"  -F "user_input=None" http://10.195.176.53/apiportal/
+
+curl -X POST   -F "file=@sample.pdf"    -F "app_mode=ChatPDF" -F "file_id=None" -F "original_filename=None" -F  "enable_chat_history=0"  -F "user_input=what is NJ capital" http://10.195.176.53/apiportal/
+
+
+to run backend server:
+uvicorn api_util:app --host 0.0.0.0 --port 8000
+
+to run frontend server:
+gunicorn app:server -b:8000 --daemon
+
+forfrontend
+gunicorn --workers=2 -b 0.0.0.0:8000 --timeout=1000 -k uvicorn.workers.UvicornWorker app:server --daemon
+
+gunicorn --workers=2 -b 0.0.0.0:8000 --timeout=1000 app:server --daemon
+
+for backend
+gunicorn --workers=2 -b 0.0.0.0:8000 --timeout=1000 -k uvicorn.workers.UvicornWorker api_util:app --daemon
+
+
+http://10.195.176.87:8000/
+
+ssh -i T95UD2QS-dev.pem  ubuntu@10.195.176.47
+ssh -i T95UD2QS-dev.pem ec2-user@10.195.176.54
+
+
+
+scp  -i pr.pem -r "ai_backend" ec2-user@10.195.176.75:/var/www/html/
+
+
+sudo nano /etc/httpd/conf.d/fastapi.conf
+
+ssh -i "T95UD2QS-dev.pem" ubuntu@10.195.176.47
+
+post
+curl -X POST   -F "file=@sample.pdf"    -F "app_mode=ChatPDF"  http://10.195.176.53/apiportal/
+get
+curl http://10.198.176.73:8000/get_test/
+
+
+
+
+scp  -i T95UD2QS-dev.pem -r "frontend-domino\app.py" ubuntu@10.195.176.47:/home/ubuntu/
+
+scp  -i T95UD2QS-dev.pem -r "ai_backend\api_util.py" ubuntu@10.195.176.70:/home/ubuntu/
+sample fast api app
+
+from fastapi import FastAPI
+10.195.176.70
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+
+check with curl http://10.198.176.91:8000/get_test
+
+
+
+
+app.py
+testing
+
+from fastapi import FastAPI
+
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+
+
+curl -X POST   -F "file=@aws_info.txt"    -F "mode=ChatPDF"  http://10.198.176.91:8000/test/
+
+curl http://10.198.176.91:8000/get_test/
+
+curl http://10.198.176.70:8000/get_test/
+
+curl -X POST  http://10.198.176.91:8000/apiportal/ --data-binary file_content@aws_info.txt  
+-F "app_mode=test" -F "original_filename=test" -F "enable_chat_history=0"   -F "user_input=f" 
+
+curl --location --request POST http://10.198.176.91:8000/apiportal/ --form 'data_binary=@summarizer_app.wsgi' -F "app_mode=test" -F "original_filename=test" -F "enable_chat_history=0"   -F "user_input=f"
+
+ 
+curl -X POST 'http://10.198.176.91:8000/apiportal/' -H 'Content-Type: multipart/form-data' -F 'app_mode=test' -F 'file_id=your_file_id' -F 'original_filename=your_original_filename' -F 'enable_chat_history=your_enable_chat_history' -F 'file_content=@summarizer_app.wsgi' -F 'user_input=your_user_input'
+
+
+http://10.198.176.91:8000/apiportal/
+
+http://10.195.176.70:8000/apiportal/
+
+
+prod
+http://10.196.176.71:8000/apiportal/
+curl http://10.198.176.91:8000/get_test/
+
+gunicorn --workers=2 -b 0.0.0.0:8000 --timeout=1000 -k uvicorn.workers.UvicornWorker api_util:app --daemon
+
+sudo aws s3 cp s3://nyl-datasci-dev-tmp/frontend-domino.zip /var/www/html/
+
+
+
+sudo aws s3 cp s3://nyl-datasci-dev-tmp/upload_functions.py /var/www/html/frontend-domino
+
+sudo aws s3 cp s3://nyl-datasci-dev-tmp/dash_home.py /var/www/html/frontend/
+
+sudo aws s3 cp /var/www/html/ai_backend/api_util_copy.py s3://nyl-nylimdatasci-qa-workspace/temp/api_util_qa.py
+
+sudo aws s3 cp  s3://nyl-nylimdatasci-dev-ai/app.py /var/www/html/frontend-domino/app.py
+
+
+sudo aws s3 cp s3://nyl-nylimdatasci-dev-ai/devalb.ai.newyorklifeinvestments.com.cer /var/www/html/frontend-domino
+
+sudo aws s3 cp s3://nyl-nylimdatasci-dev-ai/private_key.pem /var/www/html/frontend-domino
+nyl-nylimdatasci-qa-tg-email
+
+
+sudo aws s3 cp  s3://nyl-nylimdatasci-dev-ai/DevCode/frontend-domino.zip  /var/www/html/frontend.zip
+
+sudo aws s3 cp  s3://nyl-nylimdatasci-dev-ai/DevCode/ai_backend.zip  /var/www/html/ai_backend.zip
+
+sudo aws s3 cp /var/www/html/homepage.zip  s3://nyl-nylimdatasci-dev-ai/homepage/homepage.zip
+
+sudo aws s3 cp s3://nyl-nylimdatasci-dev-ai/homepage/homepage.zip
+/var/www/html/homepage.zip 
+
+
+sudo aws s3 cp s3://nyl-nylimdatasci-dev-ai/api_util.py /var/www/html/ai_backend
+
+logs
+
+/etc/httpd/logs/
+
+zip -r arch.zip dir
+unzip homepage.zip  
+For logging do:
+touch /var/www/html/ai_backend/uvicorn.log
+sudo chmod 777 /var/www/html/ai_backend/uvicorn.log
+
+
+sudo chmod 777 /var/www/html/frontend-domino/assets/uploaded_files_submitted_temp/dominokeep
+
+
+app url
+ai.newyorklifeinvestments.com
+
+
+app id is
+APP-13838 NYLIM - Data Science Platform v. 1.0Business Application
+
+AWS frontend
+
+upgrade flask
+
+
+sudo chmod 777 /var/www/html/frontend/assets/uploaded_files_temp/dominokeep
+sudo chmod 777 /var/www/html/frontend/log_files/uploaded_files_submitted/dominokeep
+
+
+AI-EmailSubjectOptimizers.Users

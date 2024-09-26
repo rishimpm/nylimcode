@@ -1,0 +1,316 @@
+Email-shankar_mohankrishnan@nylim.com
+Appname - NYLIM - Data Science Platform
+
+Any issues in AWS send email below:
+cloud_operations <Cloud_operations@newyorklife.com>
+
+https://git.nylcloud.com/Invest/data-science-apps
+T95UD2Q / Anithasiddhanth84#
+
+
+github personal
+email-shankarpm@gmail.com
+pwd- ccmm3Y7k8ijAP5u
+
+Anywhere login
+T95UD2Q
+Anithasiddhanth84#
+model  ID pwd - purplepeoplemonkeyeater
+
+Aws Dev login
+Sign-in URL: https://734607400216.signin.aws.amazon.com/console 
+T95UD2Q
+Anithashankar85#
+
+https://qaalb.ai.newyorklifeinvestments.m/
+
+QA login
+Sign-in URL: https://851725498162.signin.aws.amazon.com/console 
+T95UD2Q 
+Anithashankar84#
+
+
+AWS Prod
+https://730335375364.signin.aws.amazon.com/console 
+T95UD2Q 
+Anithashankar83#
+
+
+AWS Stage
+https://730335658955.signin.aws.amazon.com/console 
+T95UD2Q 
+Anithashankar83# 
+
+####################################
+
+DNS change - RITM1537528
+qa.ai - 
+
+ping qa.ai.newyorklifeinvestments.com
+
+Pinging qa.ai.sdint.newyorklifeinvestments.com [10.39.98.155] with 32 bytes of data:
+Reply from 10.39.98.155: bytes=32 time=27ms TTL=247
+ 
+ping qaalb.ai.newyorklifeinvestments.com
+
+Pinging qaalb.ai.sdint.newyorklifeinvestments.com [10.39.98.131] with 32 bytes of data:
+Reply from 10.39.98.131: bytes=32 time=26ms TTL=247
+
+(base) C:\Users\T95UD2Q>nslookup nyl-nylimdatasci-qa-nlb-4c5e08001737af98.elb.us-east-1.amazonaws.com
+Server:  cnjns.net.nyl.com
+Address:  10.111.1.11
+
+Non-authoritative answer:
+Name:    nyl-nylimdatasci-qa-nlb-4c5e08001737af98.elb.us-east-1.amazonaws.com
+Addresses:  10.198.176.124
+          10.198.176.75
+
+
+(base) C:\Users\T95UD2Q>nslookup internal-nyl-nylimdatasci-qa-alb-45420023.us-east-1.elb.amazonaws.com
+Server:  ntp.newyorklife.com
+Address:  10.111.1.11
+
+Non-authoritative answer:
+Name:    internal-nyl-nylimdatasci-qa-alb-45420023.us-east-1.elb.amazonaws.com
+Addresses:  10.198.176.91
+          10.198.176.105
+####################################
+
+CMDB > security request > F5 > external public IP > IS exception > firewall request dossier >
+IS exception (multiple people have to approve)
+ Rei, Pedro M. (Pete)  
+Perna, Melissa   Rahmy, 
+Mohamed A. (Mo) Ajigbeda, Tunji  
+
+github repo - RITM1523477
+
+public qa ip request - RITM1527564 , RITM1528369
+public prod ip request -RITM1527824
+
+firewall report - RITM1529160 - for qa.ai
+firewall report - RITM1529997- for qa-email.ai
+ 
+RITM1524480 - external IP
+RITM1525453 - security exception
+RITM1529991 - security exception , qa-email.ai
+
+
+snow group (service now group)
+please assign to NYLIM_AWS_DEVOPS and assign to Bhaskara Marella. Ican validate and confirm and Ican close the CTASK
+
+doc summarisaer description
+___________________________
+Reading and summarizing numerous lengthy documents is a time-consuming daily task for many people throughout the organization. Human summaries often contain inaccuracies or miss key points. Our goal is to create an AI-powered tool that can automatically extract key information from large documents, thereby enhancing work efficiency.
+
+ticket for  requesting the change of IP  for loadbalance- RITM1530996
+Ask Enrqiue , regis, aman, juan carlos for help
+
+public IP request -
+ https://newyorklife.service-now.com/service_portal?id=sc_cat_item&sys_id=f47beeae1b0a8510c7a2a648624bcb7e&sysparm_category=e261688d4ffda200bbf23d728110c733
+
+https://qa-email.ai.newyorklifeinvestments.com/
+https://qa.ai.newyorklifeinvestments.com/
+
+
+only Apogem user in NYL network
+
+ Company=Mackay (or has an e-mail ending in mackay.com)
+ Company=Candriam(or has an e-mail ending in candriam.com)
+ Company=Apogem(or has an e-mail ending in apogem.com)
+ Company=Tristan (or has an e-mail ending in Tristan.com)
+ Company=Ausbil (or has an e-mail ending in Ausbil.com)
+ Company=Index IQ (or has an e-mail ending in indexiq.com)
+ Company=NYLIM (or has an e-mail ending in nylim.com)
+
+
+domnio document summerizer - https://www.domino.datasci.eis.nylcloud.com/modelproducts/66347264d1a211107b24e1f3
+
+
+Windows password-Anithasiddhanth83#
+
+
+
+Regis - IP external access process request.
+Roy, Nilotpal - IS approval 
+SALEHIN_KADERIN@NewYorkLife.com(Sal) - external Ips
+abhinraj - Auth Ops
+Cherita - Auth team onshore
+ET_AUTHSECURITY_OPS@newyorklife.com  - Operations team
+joice Jeyarajan - dir Ops team
+Pam - I'm from Ping Directory Team , LDAP team
+enrique - F5 team
+Ramazan - cloud services
+Josh - myaccess
+Matthew Dolian - fixed the DNS issues
+Charita -- SSO Opt team
+Gene - delivery team
+Pete - email nylim_delivery@newyorklife.com or call my cell at  201-294-8869
+Tanvi - 6038127582
+
+
+identityiq
+
+
+
+RITM1454306(Register Your Personal Android: Personal Android use)
+
+
+
+app url
+ai.newyorklifeinvestments.com
+
+
+app id is
+APP-13838 NYLIM - Data Science Platform v. 1.0Business Application
+
+
+Domino prod link 
+https://www.domino.datasci.eis.nylcloud.com/modelproducts/66347264d1a211107b24e1f3
+
+JIRA MAIN
+https://nyljira.atlassian.net/browse/NYL-33
+
+JIRA FOR DOCUMENT SUMMARIZER
+https://nyljira.atlassian.net/browse/NCDM-192
+
+JIRA FOR Chaoran 
+
+https://nyljira.atlassian.net/browse/NCDM-249
+
+
+Password for AWS windows
+Zl$m3Xe%iF(ailEPTkmXsAdUTdLvqsLM
+
+devalb.ai.newyorklifeinvestments.com
+
+
+target ips
+
+10.184.110.227
+10.184.110.49
+10.184.109.223
+
+
+
+pass phrase nylimdatasciapp
+challenge pwd-nylim4590
+
+alb-nylimm4590
+
+Doc summarizer in prod(t3.medium)
+
+ip for loadbalancer pointting to app
+10.195.176.85
+
+
+
+
+meeting link
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWQ2NGUwN2MtN2JhZS00MGQ4LTlmMDEtM2E1M2U5MGY5ZjYy%40thread.v2/0?context=%7b%22Tid%22%3a%22a651e8f0-93d2-41c2-88b6-e8c5a1ad2375%22%2c%22Oid%22%3a%221886ca81-f15f-4d64-ac64-6c60c35c333d%22%7d
+
+
+notes
+
+prod -
+ai.newyorklifeinvestments.com
+alb.ai.newyorklifeinvestments.com
+email.ai.newyorklifeinvestments.com
+
+RITM1479114 qa.ai check the progress for external
+
+email.ai.newyorklifeinvestments.com - RITM1508921 - prod - i cancelled it
+
+qa-email.ai.newyorklifeinvestments.com - qa - RITM1508931
+dev-email.ai.newyorklifeinvestments.com - dev - RITM1509145
+doc.ai.newyorklifeinvestments.com - prod - RITM1527827
+
+qa.ai - certificate request - RITM1509511
+qa.alb.ai - certificate request - RITM1509687
+qa-email.ai - certificate request - RITM1509706
+Data science LDAP - RITM1509052
+for Seismic Test - RITM1509060
+
+
+Environments:
+	
+Dev
+	
+QA/Model
+	
+STG
+	
+PROD
+
+
+PingAccess Pool Members (EKS Cloud):
+	
+dev
+10.184.110.227
+10.184.110.49
+10.184.109.223
+	
+qa
+10.188.110.239
+10.188.109.143
+10.188.110.54
+
+stg	
+10.187.110.151
+10.187.110.47
+10.187.109.159
+
+prod
+10.186.110.194
+10.186.110.19
+10.186.109.252
+
+access logs
+https://us-east-1.console.aws.amazon.com/s3/object/nyl-nylimdatasci-dev-lb-access-log-bucket?region=us-east-1&bucketType=general&prefix=AWSLogs/734607400216/elasticloadbalancing/us-east-1/2024/06/14/734607400216_elasticloadbalancing_us-east-1_app.dev-nylimdatasci-alb.186c48b3d52b3629_20240614T1840Z_10.195.176.37_1d4h1ma5.log.gz
+
+
+1.openssl genpkey -algorithm RSA -out qa_private_key.pem -aes256
+ 2.openssl req -new -key qa_private_key.pem -out csr.pem
+ 3.openssl rsa -in qa_private_key.pem -out decrypted_private_key.pem
+
+
+seismic
+Logon - https://qa.cfed.newyorklife.com/idp/SSO.saml2
+Callback - https://qa.cfed.newyorklife.com/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fmackayshields.seismic.com
+
+
+https://www.cfed.newyorklife.com/idp/SSO.saml2
+https://www.cfed.newyorklife.com/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fmackayshields.seismic.com
+Entity ID  : https://mackayshields.seismic.com - correct
+ 
+
+ CHG0178555 , TDLC0012270
+
+https://newyorklife.service-now.com/now/nav/ui/classic/params/target/x_nylim_tdlc_tdlc.do%3Fsys_id%3D3268bbcd477e46d0d10f7db5536d438a%26sysparm_stack%3D%26sysparm_view%3D
+
+jdbc:redshift://nyl-nylimclientdata-dev-redshift.cnrlqw8g5zso.us-east-1.redshift.amazonaws.com:5439/client
+
+https://qa.cfed.newyorklife.com/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fmackayshields.seismic.com
+
+CMR request 
+https://newyorklife.service-now.com/now/nav/ui/classic/params/target/home.do
+
+
+
+Tanvi ->
+ Security Exception request should be submitted here : https://newyorklife.service-now.com/service_portal?id=sc_cat_item&table=sc_cat_item&sys_id=5e6378f04fa52300bbf23d728110c74e
+
+2) Once SE/SRB approved reach out to @ET_NETSEC_ENG for assigning external public IP for qa.borrowerportal.nylinvestments.com from for ADC/CNJ DMZ . Similarly, do it for Stage and Production setup. 
+
+3) Once SE/SRB approved, reach out to @ET_NETSEC_OPS for ensuring these URLs are externally accessible.
+ 
+4) Once SE/SRB approved, reach out to  @et_network_inf to get the external PA F5 setup for qa.borrowerportal.nylinvestments.com (use pool member similar to what you have for old URL bwrmgruat.nylinvestments.com external flow) it should be similar as : external_mdl_pingaccess_ssl_8888 . This is for QA. We don’t have Stage DMZ. We will have to check how that can be established. Prod can be done on similar lines as described.
+
+4) Per my understanding when user access cloud app from external flow it follows this path : DMZ PA F5 ---> internal LB ---> Front end LB (AWS) --> Pointed to Internal PA EKS Cloud ---> target application LB
+ 
+Internal flow is straight forward Front-end LB (AWS) --> Pointed to Internal PA EKS Cloud ---> target application LB. - This Jaya and team would know
+ec2 password-);FI.!N6AiaQVI;*uS2lMECLXHrVO?nG
+
+
+model login
+T95UD2Q
+model  ID pwd - purplepeoplemonkeyeater
